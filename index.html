@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yash Sabe | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar">
+    <div class="nav-logo">YS<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <!-- Hamburger for mobile -->
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <!-- Animated background grid -->
+    <div class="hero-grid"></div>
+    <!-- Glowing orbs -->
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+
+    <div class="hero-content">
+      <p class="hero-tag">👋 Hey, I'm</p>
+      <h1 class="hero-name">Yash Sabe<span class="cursor">|</span></h1>
+      <!-- Typing effect target -->
+      <p class="hero-typed">I'm a <span id="typed-text"></span><span class="typed-cursor">▌</span></p>
+      <p class="hero-desc">Passionate student developer building clean, functional, and impactful digital experiences.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-down">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 — About</span>
+        <h2>Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <!-- Avatar card with glassmorphism -->
+        <div class="about-avatar glass-card">
+          <div class="avatar-circle">
+            <span>YS</span>
+          </div>
+          <div class="avatar-badge">Open to Opportunities</div>
+        </div>
+        <!-- Bio text -->
+        <div class="about-text">
+          <p>I'm <strong>Yash Sabe</strong>, a first-year engineering student with a drive for building things that matter. I enjoy combining logic and creativity to craft software that solves real problems.</p>
+          <p>When I'm not studying, I'm exploring new technologies, working on side projects, or sharpening my problem-solving skills through coding challenges.</p>
+          <ul class="about-facts">
+            <li><span class="fact-icon">🎓</span> Engineering Student</li>
+            <li><span class="fact-icon">💡</span> Problem Solver</li>
+            <li><span class="fact-icon">🚀</span> Fast Learner</li>
+            <li><span class="fact-icon">🌐</span> Open Source Enthusiast</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section id="education" class="section reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 — Education</span>
+        <h2>Academic Journey</h2>
+      </div>
+      <div class="edu-timeline">
+
+        <!-- SSC -->
+        <div class="edu-card glass-card reveal">
+          <div class="edu-icon">📘</div>
+          <div class="edu-info">
+            <h3>SSC (10th Grade)</h3>
+            <p class="edu-school">Maharashtra State Board</p>
+            <div class="edu-score">
+              <div class="score-bar-wrap">
+                <div class="score-bar" style="--pct: 73.6%"></div>
+              </div>
+              <span class="score-label">73.60%</span>
+            </div>
+          </div>
+          <div class="edu-badge">Completed</div>
+        </div>
+
+        <!-- HSC -->
+        <div class="edu-card glass-card reveal">
+          <div class="edu-icon">📗</div>
+          <div class="edu-info">
+            <h3>HSC (12th Grade)</h3>
+            <p class="edu-school">Maharashtra State Board</p>
+            <div class="edu-score">
+              <div class="score-bar-wrap">
+                <div class="score-bar" style="--pct: 69.6%"></div>
+              </div>
+              <span class="score-label">69.60%</span>
+            </div>
+          </div>
+          <div class="edu-badge">Completed</div>
+        </div>
+
+        <!-- FY Engineering -->
+        <div class="edu-card glass-card reveal">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-info">
+            <h3>First Year Engineering</h3>
+            <p class="edu-school">University / College</p>
+            <div class="edu-score">
+              <div class="score-bar-wrap">
+                <div class="score-bar" style="--pct: 70%"></div>
+              </div>
+              <span class="score-label">SGPA: 7.0 / 10</span>
+            </div>
+          </div>
+          <div class="edu-badge ongoing">Ongoing</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="section reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 — Skills</span>
+        <h2>Tech Stack</h2>
+      </div>
+      <div class="skills-grid">
+        <!-- Each skill pill -->
+        <div class="skill-pill reveal" style="--d:0s"><span class="s-icon">🌐</span>HTML5</div>
+        <div class="skill-pill reveal" style="--d:.05s"><span class="s-icon">🎨</span>CSS3</div>
+        <div class="skill-pill reveal" style="--d:.1s"><span class="s-icon">⚡</span>JavaScript</div>
+        <div class="skill-pill reveal" style="--d:.15s"><span class="s-icon">🐍</span>Python</div>
+        <div class="skill-pill reveal" style="--d:.2s"><span class="s-icon">☕</span>Java</div>
+        <div class="skill-pill reveal" style="--d:.25s"><span class="s-icon">🗄️</span>MySQL</div>
+        <div class="skill-pill reveal" style="--d:.3s"><span class="s-icon">🔧</span>Git & GitHub</div>
+        <div class="skill-pill reveal" style="--d:.35s"><span class="s-icon">💻</span>VS Code</div>
+        <div class="skill-pill reveal" style="--d:.4s"><span class="s-icon">📐</span>Data Structures</div>
+        <div class="skill-pill reveal" style="--d:.45s"><span class="s-icon">🔢</span>C Programming</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="section reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 — Projects</span>
+        <h2>What I've Built</h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card glass-card reveal">
+          <div class="project-img" style="--color:#00d4ff">
+            <span class="project-emoji">🌦️</span>
+          </div>
+          <div class="project-body">
+            <h3>Weather App</h3>
+            <p>A real-time weather application fetching live data using OpenWeatherMap API with a clean, responsive UI.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JS</span><span>API</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-sm">🔗 Live</a>
+              <a href="#" class="btn-sm outline">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass-card reveal">
+          <div class="project-img" style="--color:#a855f7">
+            <span class="project-emoji">✅</span>
+          </div>
+          <div class="project-body">
+            <h3>Task Manager</h3>
+            <p>A productivity app with CRUD operations, local storage persistence, drag-and-drop, and priority tagging.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-sm">🔗 Live</a>
+              <a href="#" class="btn-sm outline">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card glass-card reveal">
+          <div class="project-img" style="--color:#22c55e">
+            <span class="project-emoji">🧮</span>
+          </div>
+          <div class="project-body">
+            <h3>Calculator App</h3>
+            <p>A sleek scientific calculator built with vanilla JS, supporting complex expressions and keyboard input.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-sm">🔗 Live</a>
+              <a href="#" class="btn-sm outline">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 — Contact</span>
+        <h2>Let's Connect</h2>
+      </div>
+      <p class="contact-sub">I'm open to collaborations, internships, and new opportunities. Drop a message!</p>
+      <div class="contact-cards">
+
+        <a href="mailto:yashsabe@email.com" class="contact-card glass-card reveal">
+          <div class="c-icon email-icon">✉️</div>
+          <h4>Email</h4>
+          <p>yashsabe@email.com</p>
+        </a>
+
+        <a href="https://linkedin.com/in/yashsabe" target="_blank" class="contact-card glass-card reveal">
+          <div class="c-icon">💼</div>
+          <h4>LinkedIn</h4>
+          <p>linkedin.com/in/yashsabe</p>
+        </a>
+
+        <a href="https://github.com/yashsabe" target="_blank" class="contact-card glass-card reveal">
+          <div class="c-icon">🐙</div>
+          <h4>GitHub</h4>
+          <p>github.com/yashsabe</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">YS<span class="dot">.</span></div>
+      <p>Designed & Built by <strong>Yash Sabe</strong> · 2025</p>
+      <p class="footer-note">Made with ❤️ and lots of ☕</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
